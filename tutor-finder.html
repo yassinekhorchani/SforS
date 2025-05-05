@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>S4S – Find Tutors</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-white border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="index.html">S4S</a>
+      <div class="d-flex">
+        <a href="points-wallet.html" class="btn btn-link">Wallet</a>
+        <a href="tutor-finder.html" class="btn btn-link">Find Tutors</a>
+        <a href="tutor-gateway.html" class="btn btn-outline-success">Become a Tutor</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <!-- Filters -->
+    <div class="row mb-3 g-2">
+      <div class="col-md-5">
+        <input id="search" class="form-control" placeholder="Search tutors..." />
+      </div>
+      <div class="col-md-3">
+        <select id="subject-filter" class="form-select">
+          <option value="">All Subjects</option>
+          <option>Python</option>
+          <option>Math</option>
+          <option>ML</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <select id="sort" class="form-select">
+          <option value="rating">Best Rated</option>
+          <option value="sessions">Most Sessions</option>
+          <option value="price">Price Low→High</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Tutor Card Example -->
+    <div class="card mb-3 shadow-sm tutor-card">
+      <div class="row g-0 align-items-center">
+        <div class="col-3 text-center p-2">
+          <img src="placeholder-avatar.jpg" class="img-fluid rounded-circle" width="80" alt="" />
+        </div>
+        <div class="col-6">
+          <div class="card-body">
+            <h5>Yassine KHorchani <span class="badge bg-info text-dark">Top Tutor</span></h5>
+            <p class="mb-1">Python | Machine Learning</p>
+            <small class="text-muted">⭐ 4.9/5 (120 sessions)</small>
+            <div class="mt-1">
+              <span class="badge bg-secondary">#Python</span>
+              <span class="badge bg-secondary">#ML</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 text-end pe-4">
+          <a href="tutor-hub.html" class="btn btn-success">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placeholder for search/filter JS -->
+  <script>
+    // Add your search/filter logic here
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
